@@ -2,7 +2,7 @@ import { BtnDownload, Container, RootContainer } from "@components/defaults";
 import React from "react";
 import { RootDiv, ImageDiv, TextArea } from "./style";
 
-function Main() {
+function BoxMain() {
   return (
     <RootContainer>
       <Container>
@@ -27,4 +27,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default BoxMain;
