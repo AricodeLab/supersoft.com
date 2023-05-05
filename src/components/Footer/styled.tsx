@@ -5,7 +5,7 @@ const FooterRoot = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${theme.colors.blue[800]};
+
   color: #fff;
   padding: 20px;
 
@@ -53,25 +53,14 @@ const FooterMenu = styled.div`
 `;
 
 const FooterLogoDiv = styled.div`
-  
+  img{
+    filter:brightness(0%);
+    filter: invert(100%);
+    margin-bottom: 10px;
+  }
 
 `
-const FooterButtonDownload = styled.a`
-  background-color: ${theme.colors.green};
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 12px;
- width: 100px;
- display: flex;
- justify-content: space-around;
- text-align: center;
- font-weight: bold;
- transition: 0.2s linear;
- :hover{
-  text-decoration: underline;
-  width: 110px;
- }
-`
+
 const FooterMenuItem = styled.div`
 
  h3{
@@ -83,4 +72,4 @@ const FooterMenuItem = styled.div`
 `;
 
 
-export { FooterRoot, FooterMenu, FooterMenuItem, FooterLogoDiv, FooterButtonDownload };
+export { FooterRoot, FooterMenu, FooterMenuItem, FooterLogoDiv };
