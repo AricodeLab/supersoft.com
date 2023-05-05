@@ -40,8 +40,8 @@ const BtnDownload = styled.a<ButtonDownload>`
   z-index: 2; /* Defina um valor de z-index maior que os elementos abaixo */
   :hover {
     text-decoration: underline;
-    width: 120px;
-    transform: translateX(10px);
+    transform: scaleX(1.5) translateX(10px);
+    text-align: left;
   }
 `;
 export { Container, BtnDownload, RootContainer };

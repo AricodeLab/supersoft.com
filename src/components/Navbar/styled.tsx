@@ -11,8 +11,6 @@ const NavBarRoot = styled.nav`
 `;
 
 const NavMenu = styled.ul`
-  position: relative;
-  z-index: 1;
   display: flex;
   list-style: none;
   margin: 0 auto;
