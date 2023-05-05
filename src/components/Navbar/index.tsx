@@ -1,9 +1,8 @@
 import { useState } from "react";
 import * as S from "./styled";
-import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { Container } from "@components/defaults";
+import { Container, RootContainer, BtnDownload } from "@components/defaults";
+import NavLinks from "./navlinks";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,26 +24,30 @@ function NavBar() {
   };
 
   return (
-    <Container>
-      <S.NavBarRoot>
-        NavBar{" "}
-        <S.HamburgerMenu onClick={handleToggle}>
-          {" "}
-          <motion.div animate="a" variants={iconVariants}>
-            <FontAwesomeIcon icon={icon} />
-          </motion.div>
-        </S.HamburgerMenu>
-        <S.NavMenu
-          as={motion.ul}
-          animate={isOpen ? "open" : "closed"}
-          variants={menuVariants}
-        >
-          <S.NavMenuItem>Link 1</S.NavMenuItem>
-          <S.NavMenuItem>Link 2</S.NavMenuItem>
-          <S.NavMenuItem>Link 3</S.NavMenuItem>
-        </S.NavMenu>
-      </S.NavBarRoot>
-    </Container>
+    <RootContainer
+      border="1px solid #70707030"
+      style={{
+        opacity: 1,
+        backdropFilter: "blur(7px)",
+        WebkitBackdropFilter: "blur(7px)",
+      }}
+    >
+      <Container>
+        <S.NavBarRoot>
+          <S.SuperSoftIcon src="/images/Logo Supersoft.svg" alt="icon" />
+          <S.NavMenu>
+            <NavLinks />
+          </S.NavMenu>
+          <div>
+            <BtnDownload style={{ justifySelf: "right" }}>
+              {" "}
+              Baixar{" "}
+            </BtnDownload>
+          </div>
+        </S.NavBarRoot>
+        {/* <NavLinks /> */}
+      </Container>
+    </RootContainer>
   );
 }
 

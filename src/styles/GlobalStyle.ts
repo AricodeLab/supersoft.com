@@ -32,15 +32,16 @@ const GlobalStyle = createGlobalStyle`
     @font-face {
     font-family: 'Segoe UI Regular';
     font-style: normal;
+    font-family: sans-serif;
     font-weight: normal;
-    src: local('Segoe UI Regular'), url('/fonts/segoe/Segoe UI.woff') format('woff');
+    src:  url('/fonts/segoe/Segoe UI.woff') format('woff');
     }
     
     @font-face {
     font-family: 'Segoe UI SemiBold';
     font-style: normal;
     font-weight: 600;
-    src: local('Segoe UI Regular'), url('/fonts/segoe/Segoe UI.woff') format('woff');
+    src:  url('/fonts/segoe/Segoe UI.woff') format('woff');
     }
 
 
@@ -48,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Segoe UI Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Segoe UI Bold'), url('/fonts/segoe/Segoe UI Bold.woff') format('woff');
+    src:  url('/fonts/segoe/Segoe UI Bold.woff') format('woff');
     }
   
   *,

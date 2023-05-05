@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Recursos",
+        "options": [
+            {
+                "name": "Opção 1",
+                "link": " "
+            },
+            {
+                "name": "Opção 1",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "title": "Privacidade",
+        "link": ""
+    },
+    {
+        "title": "Central de ajuda",
+        "link": ""
+    },
+    {
+        "title": "Blog",
+        "link": ""
+    },
+    {
+        "title": "WhatsApp Web",
+        "link": ""
+    }
+]
