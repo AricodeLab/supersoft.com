@@ -1,4 +1,4 @@
-import { Container, RootContainer,BtnDownload } from "@components/defaults";
+import { Container, RootContainer, BtnDownload } from "@components/defaults";
 import * as S from "./styled";
 import Link from "next/link";
 import Image from 'next/image'
@@ -28,10 +28,10 @@ function Footer() {
         <S.FooterRoot>
 
           <S.FooterLogoDiv>
-              <Image src={logo} alt="" width={200} />
-            <BtnDownload href="#" download 
-            bg={theme.colors.green}
-            txtColor={theme.colors.black}
+            <Image src={logo} alt="" width={200} />
+            <BtnDownload href="#" download
+              bg={theme.colors.green}
+              txtColor={theme.colors.black}
             >
               Baixar <FontAwesomeIcon icon={faDownload} width={12} />
             </BtnDownload>
@@ -41,7 +41,25 @@ function Footer() {
             {footerComponent}
           </S.FooterMenu>
 
+
         </S.FooterRoot>
+        <S.FooterCredits>
+          <p>2023<br /> SuperSoft</p>
+          <Link href={""}>
+            Termos de serviço
+          </Link>
+          <S.FooterButtons>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </S.FooterButtons>
+          <S.FooterLangSection>
+            
+            <option value="portugues">Português(Brasil)</option>
+            <option value="inglish">inglês(USA)</option>
+          </S.FooterLangSection>
+        </S.FooterCredits>
 
       </Container>
     </RootContainer>
