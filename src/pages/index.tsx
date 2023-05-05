@@ -1,15 +1,5 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import styled from "styled-components";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const TesteFoda = styled.div`
-  width: 500px;
-  height: 500px;
-  margin: auto;
-  padding: 50px;
-`;
+import NavBar from "@components/Navbar";
 
 export default function Home() {
   return (
@@ -20,12 +10,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={inter.className}>
-        <div>
-          <TesteFoda>
-            <h1>Coisa foda</h1>
-          </TesteFoda>
-        </div>
+      <main>
+        <NavBar />
       </main>
     </>
   );
