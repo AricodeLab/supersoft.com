@@ -12,8 +12,11 @@ export default function Home() {
         <link rel="icon" href="/images/Logo Supersoft.svg" />
       </Head>
       <main>
-        <S.Navbar />
-        <S.BoxMain />
+        <S.Header />
+        <S.MainSection />
+        <S.AboutSection />
+        <S.AutomationSection />
+        <S.InfoSection />
         <S.Footer />
       </main>
     </>

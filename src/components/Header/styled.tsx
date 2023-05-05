@@ -37,7 +37,7 @@ const NavMenuItem = styled.li`
     opacity: 1;
     margin: 0;
     :hover {
-    text-decoration: underline;
+      text-decoration: underline;
     }
   }
 
@@ -76,9 +76,4 @@ const SuperSoftIcon = styled.img`
   height: 3rem;
 `;
 
-export {
-  NavBarRoot,
-  NavMenu,
-  NavMenuItem,
-  SuperSoftIcon,
-};
+export { NavBarRoot, NavMenu, NavMenuItem, SuperSoftIcon };

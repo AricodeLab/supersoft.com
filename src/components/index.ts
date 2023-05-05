@@ -1,4 +1,6 @@
-export { default as BoxAbout } from "./BoxAbout";
-export { default as BoxMain } from "./BoxMain";
+export { default as AboutSection } from "./AboutSection";
+export { default as MainSection } from "./MainSection";
 export { default as Footer } from "./Footer";
-export { default as Navbar } from "./Navbar";
+export { default as Header } from "./Header";
+export { default as AutomationSection } from "./AutomationSection";
+export { default as InfoSection } from "./InfoSection";

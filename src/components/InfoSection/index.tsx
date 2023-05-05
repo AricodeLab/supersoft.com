@@ -1,12 +1,12 @@
 import { Container, RootContainer } from "@components/defaults";
 import React from "react";
 
-function BoxAbout() {
+function InfoSection() {
   return (
     <RootContainer>
-      <Container>BoxAbout</Container>
+      <Container>InfoSection</Container>
     </RootContainer>
   );
 }
 
-export default BoxAbout;
+export default InfoSection;

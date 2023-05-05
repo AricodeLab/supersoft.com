@@ -27,6 +27,7 @@ function NavBar() {
     <RootContainer
       border="1px solid #70707030"
       style={{
+        border: "1px solid #70707030",
         opacity: 1,
         backdropFilter: "blur(7px)",
         WebkitBackdropFilter: "blur(7px)",
