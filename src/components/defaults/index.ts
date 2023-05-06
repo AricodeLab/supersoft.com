@@ -13,7 +13,7 @@ type RootContainer = {
 };
 const RootContainer = styled.div<RootContainer>`
   width: 100%;
-  max-width: 100vw;
+  min-width: 100%;
   margin: 0 auto;
   background: ${(props) => props.bgColor};
   border: ${(props) => props.bgColor};
