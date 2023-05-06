@@ -17,13 +17,15 @@ const AutomationSectionRoot = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
+    min-height: fit-content;
+    padding-top: 2rem;
     img {
-    object-fit: fill;
-    max-width: 60%;
-    height: 25%;
-    justify-self: center;
-    align-self: flex-end;
-  }
+      object-fit: fill;
+      max-width: 60%;
+      height: 25%;
+      justify-self: center;
+      align-self: flex-end;
+    }
   }
 `;
 
@@ -38,6 +40,11 @@ const TextArea = styled.div`
     max-width: 38.438rem;
     font: normal normal 900 4.313rem/3.375rem "Segoe UI Bold";
     color: ${(props) => props.theme.colors.white};
+
+     @media screen and (max-width: 768px) {
+    font: normal normal 900 3rem/3rem "Segoe UI Bold";
+
+     }
   }
   p {
     font-family: "Segoe UI Regular";
@@ -56,6 +63,10 @@ const TextArea = styled.div`
   }
   font: normal normal normal 21px/31px "Assistant Regular";
   letter-spacing: 0px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5rem;
+  }
 `;
 
 export { AutomationSectionRoot, TextArea };

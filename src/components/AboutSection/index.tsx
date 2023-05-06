@@ -53,7 +53,7 @@ function AboutSection() {
         <S.AboutSectionRoot >
           <img src="/images/Camada 1@2x.png" alt="Camada 1@2x.png" />
           <S.TextArea style={{ marginTop: "2rem", textAlign: "left" }} >
-            <h1 color="#0093FB">{t("about_section.sslegis")}</h1>
+            <h1  className="sslegis">{t("about_section.sslegis")}</h1>
             <p>{t("about_section.consulting")}</p>
             <p>{t("about_section.legislative_consulting")}</p>
           </S.TextArea>

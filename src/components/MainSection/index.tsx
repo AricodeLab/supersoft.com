@@ -8,12 +8,12 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 function BoxMain() {
   const { t } = useTranslation();
   return (
-    <RootContainer style={
-      { marginTop: '100px' }
-    }>
+    <RootContainer  style={
+      {marginTop: '100px' }
+    } >
       <Container>
         <RootDiv>
-          <ImageDiv>
+          <ImageDiv >
             <TextArea>
               <h1>
                 {t('main_section.full_solution_systems')}
