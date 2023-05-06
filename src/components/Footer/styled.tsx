@@ -129,6 +129,10 @@ const FooterButtons = styled.div`
     border-radius: 100%;
     border: 1px solid #fff;
     background-color: ${theme.colors.blue[900]};
+    @media (max-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
   }
 `;
 const FooterLangSection = styled.select`

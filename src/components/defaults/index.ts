@@ -27,10 +27,12 @@ const BtnDownload = styled.a<ButtonDownload>`
   overflow-x: auto;
   background-color: ${(props) => props.bg || props.theme.colors.blue[700]};
   padding: 10px;
+  box-sizing:border-box ;
   border-radius: 20px;
   font-size: 12px;
   max-width: 110px;
   width: 100px;
+  height: 35px;
   display: flex;
   justify-content: space-around;
   text-align: center;
