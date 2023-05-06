@@ -1,9 +1,10 @@
 import { useState } from "react";
 import * as S from "./styled";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { Container, RootContainer, BtnDownload } from "@components/defaults";
+import { faBars, faDownload, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Container, RootContainer, BtnDownload,BoxButton } from "@components/defaults";
 import NavLinks from "./navlinks";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NavBar() {
   const { t } = useTranslation();
@@ -41,9 +42,11 @@ function NavBar() {
           <S.NavMenu>
             <NavLinks />
           </S.NavMenu>
-          <div>
-            <BtnDownload style={{ justifySelf: "right" }}>{t("download")}</BtnDownload>
-          </div>
+        <BoxButton>
+
+            <BtnDownload style={{ justifySelf: "right" }}>{t("download")} <FontAwesomeIcon icon={faDownload} width={12} /></BtnDownload>
+          
+        </BoxButton>
         </S.NavBarRoot>
         {/* <NavLinks /> */}
       </Container>

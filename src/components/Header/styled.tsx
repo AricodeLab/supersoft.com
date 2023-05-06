@@ -11,6 +11,7 @@ const NavBarRoot = styled.nav`
 `;
 
 const NavMenu = styled.ul`
+position: relative;
   display: flex;
   list-style: none;
   margin: 0 auto;
@@ -75,5 +76,6 @@ const SuperSoftIcon = styled.img`
   margin: auto 0;
   height: 3rem;
 `;
+
 
 export { NavBarRoot, NavMenu, NavMenuItem, SuperSoftIcon };

@@ -5,14 +5,15 @@ import PT from '../../public/locale/pt.json'
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: {
-      translation: EN
-    },
     pt: {
       translation: PT
     }
+    ,
+    en: {
+      translation: EN
+    }
   },
-  lng: "en",
+  lng: "pt",
   fallbackLng: "en",
   interpolation: {
     escapeValue: false

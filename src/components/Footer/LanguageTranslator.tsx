@@ -4,7 +4,7 @@ import { useState } from "react";
 import i18n from "../../config/i18n";
 
 function LanguageTranslate() {
-    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+    const [currentLanguage, setCurrentLanguage] = useState('pt');
 
 
     const handleChangeLanguage = (ev: any) => {
