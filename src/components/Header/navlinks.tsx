@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import { NavMenuItem } from "./styled";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface NavOption {
   name: string;
@@ -18,7 +19,7 @@ interface NavLink {
 
 function NavLinks() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { t } = useTranslation();
   function toggleDropdown() {
     setIsOpen(!isOpen);
   }
@@ -30,7 +31,7 @@ function NavLinks() {
           return (
             <NavMenuItem key={link.title} style={{ position: "relative" }}>
               <div onClick={toggleDropdown} style={{ display: "flex", flexDirection: "row" }}>
-                <p>{link.title}</p>
+                <p>{t(link.title)}</p>
                 <FontAwesomeIcon icon={isOpen ? faCaretUp : faCaretDown} />
               </div>
               <motion.div
@@ -50,7 +51,7 @@ function NavLinks() {
                 {isOpen &&
                   link.options.map((option) => (
                     <a key={option.link} href={option.link}>
-                      <p>{option.name} </p>
+                      <p>{t(option.name)} </p>
                     </a>
                   ))}
               </motion.div>
@@ -60,7 +61,7 @@ function NavLinks() {
           return (
             <NavMenuItem key={link.title}>
               <a href={link.link}>
-                <p>{link.title}</p>
+                <p>{t(link.title)}</p>
               </a>
             </NavMenuItem>
           );

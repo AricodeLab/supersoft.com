@@ -7,15 +7,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import theme from "@styles/theme";
 import logo from '../../../public/images/Logo Supersoft.svg'
+import LanguageTranslate from "./LanguageTranslator";
+import { useTranslation } from "react-i18next";
+
+
 function Footer() {
-  const footerComponent = footerLink.map(value => {
-    return <S.FooterMenuItem>
-      <h3>{value.title}</h3>
+  const { t } = useTranslation();
+
+
+  const footerComponent = footerLink.map((value, i) => {
+    return <S.FooterMenuItem key={i}>
+      <h3>{t(value.title)}</h3>
       <ul>
         {value.links.map((linkValue, index) => {
           return <li key={index}>
             <Link href={linkValue.link}>
-              {linkValue.name}
+              {t(linkValue.name)}
             </Link>
           </li>
         })}
@@ -33,7 +40,7 @@ function Footer() {
               bg={theme.colors.green}
               txtColor={theme.colors.black}
             >
-              Baixar <FontAwesomeIcon icon={faDownload} width={12} />
+              {t('Baixar')} <FontAwesomeIcon icon={faDownload} width={12} />
             </BtnDownload>
           </S.FooterLogoDiv>
 
@@ -46,7 +53,7 @@ function Footer() {
         <S.FooterCredits>
           <p>2023<br /> SuperSoft</p>
           <Link href={""}>
-            Termos de serviço
+           {t("Termos de serviço")}
           </Link>
           <S.FooterButtons>
             <button></button>
@@ -54,11 +61,7 @@ function Footer() {
             <button></button>
             <button></button>
           </S.FooterButtons>
-          <S.FooterLangSection>
-            
-            <option value="portugues">Português(Brasil)</option>
-            <option value="inglish">inglês(USA)</option>
-          </S.FooterLangSection>
+          <LanguageTranslate />
         </S.FooterCredits>
 
       </Container>

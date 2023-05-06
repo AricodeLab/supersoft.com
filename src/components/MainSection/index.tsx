@@ -1,8 +1,10 @@
 import { BtnDownload, Container, RootContainer } from "@components/defaults";
 import React from "react";
 import { RootDiv, ImageDiv, TextArea } from "./style";
+import { useTranslation } from "react-i18next";
 
 function BoxMain() {
+  const { t } = useTranslation();
   return (
     <RootContainer>
       <Container>
@@ -10,15 +12,14 @@ function BoxMain() {
           <ImageDiv>
             <TextArea>
               <h1>
-                A solução completa em sistemas para o seu Escritório seu
-                Escritório
+                {t('descrição grande')}
+               
               </h1>
 
               <p>
-                Mensagens e chamadas privadas simples, seguras e gratuitas*,
-                disponíveis em todo o mundo.
+               {t("descrição pequena")}
               </p>
-              <BtnDownload bg="#0050FF">Baixar</BtnDownload>
+              <BtnDownload bg="#0050FF">{t("Baixar")}</BtnDownload>
             </TextArea>
           </ImageDiv>
         </RootDiv>
