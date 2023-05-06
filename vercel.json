@@ -1,4 +1,7 @@
 {
     "buildCommand": "next build",
-    "devCommand": "next dev"
+    "devCommand": "next dev",
+    "framework": "nextjs"
+
+
 }
