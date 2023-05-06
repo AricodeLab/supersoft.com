@@ -1,7 +1,7 @@
 import { useState } from "react";
 import * as S from "./styled";
 import { faBars, faDownload, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { Container, RootContainer, BtnDownload,BoxButton } from "@components/defaults";
+import { Container, RootContainer, BtnDownload, BoxButton } from "@components/defaults";
 import NavLinks from "./navlinks";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,23 +34,27 @@ function NavBar() {
         opacity: 1,
         backdropFilter: "blur(7px)",
         WebkitBackdropFilter: "blur(7px)",
-      }}
-    >
-      <Container>
-        <S.NavBarRoot>
-          <S.SuperSoftIcon src="/images/Logo Supersoft.svg" alt="icon" />
-          <S.NavMenu>
-            <NavLinks />
-          </S.NavMenu>
-        <BoxButton>
+       position:"fixed",
+       top:"0",
+       zIndex:"1000000",
+       background: '#ffffffd1',
+ 
+}} >
+  <Container>
+    <S.NavBarRoot>
+      <S.SuperSoftIcon src="/images/Logo Supersoft.svg" alt="icon" />
+      <S.NavMenu>
+        <NavLinks />
+      </S.NavMenu>
+      <BoxButton>
 
-            <BtnDownload style={{ justifySelf: "right" }}>{t("download")} <FontAwesomeIcon icon={faDownload} width={12} /></BtnDownload>
-          
-        </BoxButton>
-        </S.NavBarRoot>
-        {/* <NavLinks /> */}
-      </Container>
-    </RootContainer>
+        <BtnDownload style={{ justifySelf: "right" }}>{t("download")} <FontAwesomeIcon icon={faDownload} width={12} /></BtnDownload>
+
+      </BoxButton>
+    </S.NavBarRoot>
+    {/* <NavLinks /> */}
+  </Container>
+    </RootContainer >
   );
 }
 

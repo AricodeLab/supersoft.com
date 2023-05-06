@@ -109,6 +109,7 @@ const FooterCredits = styled.div`
     font: normal normal 600 0.875rem/1.063rem "Segoe UI Regular";
     :hover {
       text-decoration: underline;
+      
     }
   }
 
