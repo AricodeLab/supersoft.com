@@ -36,7 +36,7 @@ function InfoSection() {
             <img src="/images/Aspas.svg" alt="aspas"/>
             <p>{t("testimonial")}</p>
             <S.CardFooter>
-              <img src="/images/1551@2x.png" alt="people"/>
+              <img src="/images/16028@2x.png" alt="people"/>
               <div>
                 <span>David</span>
                 <p>David Ramirez</p>
@@ -47,7 +47,7 @@ function InfoSection() {
             <img src="/images/Aspas.svg" alt="aspas"/>
             <p>{t("testimonial")}</p>
             <S.CardFooter>
-              <img src="/images/1551@2x.png" alt="people"/>
+              <img src="/images/15740@2x.png" alt="people"/>
               <div>
                 <span>David</span>
                 <p>David Ramirez</p>
