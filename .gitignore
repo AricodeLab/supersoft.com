@@ -141,3 +141,4 @@ temp/*
 cache/*
 *.env
 *.zip
+.vercel
