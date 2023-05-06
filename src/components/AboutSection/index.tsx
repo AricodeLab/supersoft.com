@@ -3,6 +3,8 @@ import React from "react";
 import * as S from "./styled";
 import { useTranslation } from "react-i18next";
 import EN from '../../../public/locale/en.json'
+import ReactDOMServer from "react-dom/server";
+
 function AboutSection() {
   const { t } = useTranslation();
 
@@ -12,7 +14,7 @@ function AboutSection() {
     EN.about_section.services.differentiated_support,
     EN.about_section.services.accessible,
   ];
-
+  const boldWord = t("about_section.nooven_systems_programs")
   return (
     <RootContainer >
       <Container>
@@ -20,13 +22,15 @@ function AboutSection() {
           <S.TextArea style={{ textAlign: "left" }}>
             <h1>{t("about_section.we_are_super")}</h1>
             <hr />
-            <p>{t("about_section.nooven_systems_programs", 'style="font: normal normal bold 21px/31px Assistant Regular;"')}</p>
+
+            <p dangerouslySetInnerHTML={{ __html: boldWord }}></p>
+            
             <p>{t("about_section.the_economy")}</p>
           </S.TextArea>
           <S.GridContainer>
             {keys_locale.map((service) => {
               const title = service.title
-              const text = service .text
+              const text = service.text
 
               return (
                 <S.GridItem key={service.toString()} style={{ textAlign: "left" }}>

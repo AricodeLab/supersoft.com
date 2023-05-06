@@ -13,6 +13,9 @@ const AboutSectionRoot = styled.div`
     width: 37.375rem;
     height: 24.125rem;
   }
+  p{
+    color:#587084;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
@@ -21,7 +24,9 @@ const AboutSectionRoot = styled.div`
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+p{
+  color: #636363;
+}
   @media (max-width: 768px) {
     margin-top: 7.875rem;
 

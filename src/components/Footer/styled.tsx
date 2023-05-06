@@ -37,6 +37,7 @@ const FooterMenu = styled.div`
   }
 
   a {
+    font-size: 16px;
     color: #fff;
     font-weight: bold;
     :hover {
@@ -138,6 +139,10 @@ const FooterLangSection = styled.select`
   font-weight: bold;
   cursor: pointer;
   text-align: center;
+  option{
+    border-radius: 50px;
+    transition: 1s linear;
+  }
 `;
 
 export {
