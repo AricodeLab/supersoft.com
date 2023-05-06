@@ -40,12 +40,18 @@ const TextArea = styled.div`
   display: flex;
   flex-direction: column;
   color: ${({ theme }) => theme.colors.white};
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  gap: 2rem;
+  text-align: left;
 
   h1 {
-    text-align: left;
+    max-width: 38.438rem;
     font: normal normal 600 4.313rem/3.375rem "Segoe UI SemiBold" ;
+  }
+  p{
+    max-width: 23.625rem;
+    font: normal normal normal 1.563rem/2.125rem "Segoe UI Regular";
   }
 
   & > div {

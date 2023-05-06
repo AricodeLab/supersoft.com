@@ -12,14 +12,14 @@ function BoxMain() {
           <ImageDiv>
             <TextArea>
               <h1>
-                {t('descrição grande')}
+                {t('main_section.full_solution_systems')}
                
               </h1>
 
               <p>
-               {t("descrição pequena")}
+               {t("main_section.private_messages_and_calls")}
               </p>
-              <BtnDownload bg="#0050FF">{t("Baixar")}</BtnDownload>
+              <BtnDownload bg="#0050FF">{t("download")}</BtnDownload>
             </TextArea>
           </ImageDiv>
         </RootDiv>

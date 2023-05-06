@@ -1,6 +1,6 @@
 [
     {
-        "title": "Recursos",
+        "title": "resources",
         "options": [
             {
                 "name": "Opção 1",
@@ -13,19 +13,19 @@
         ]
     },
     {
-        "title": "Privacidade",
+        "title": "privacy_policy",
         "link": ""
     },
     {
-        "title": "Central de ajuda",
+        "title": "help_center",
         "link": ""
     },
     {
-        "title": "Blog",
+        "title": "blog",
         "link": ""
     },
     {
-        "title": "WhatsApp Web",
+        "title": "whatsapp_web",
         "link": ""
     }
 ]

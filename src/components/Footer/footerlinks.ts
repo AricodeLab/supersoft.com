@@ -1,60 +1,60 @@
 
 const footerLink = [
     {
-        title: 'O que fazemos',
+        title: 'what_we_do',
         links: [
             {
-                name: 'Recursos',
+                name: 'resources',
                 link: ''
             },
             {
-                name: 'Blog',
+                name: 'blog',
                 link: ''
             },
             {
-                name: 'História',
+                name: 'history',
                 link: ''
             },
             {
-                name: 'Para empresas',
+                name: 'for_companies',
                 link: ''
             }
         ]
     },
     {
-        title: 'Quem somos',
+        title: 'who_we_are',
         links: [
             {
-                name: 'Sobre nós',
+                name: 'about_us',
                 link: ''
             },
             {
-                name: 'Carreiras',
+                name: 'careers',
                 link: ''
             },
             {
-                name: 'Central de marcas',
+                name: 'brand_center',
                 link: ''
             },
             {
-                name: 'Privacidade',
+                name: 'privacy_policy',
                 link: ''
             }
         ]
     },
     {
-        title: 'Precisa de ajuda?',
+        title: 'need_help',
         links: [
             {
-                name: 'Fale conosco',
+                name: 'contact_us',
                 link: ''
             },
             {
-                name: 'Central de ajuda',
+                name: 'help_center',
                 link: ''
             },
             {
-                name: 'Coronavírus',
+                name: 'coronavirus',
                 link: ''
             }
         ]

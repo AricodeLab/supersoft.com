@@ -17,7 +17,6 @@ export default function Home() {
         <S.AboutSection />
         <S.AutomationSection />
         <S.InfoSection />
-        <S.Footer />
       </main>
     </>
   );

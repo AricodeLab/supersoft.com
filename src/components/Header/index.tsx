@@ -42,7 +42,7 @@ function NavBar() {
             <NavLinks />
           </S.NavMenu>
           <div>
-            <BtnDownload style={{ justifySelf: "right" }}>{t("Baixar")}</BtnDownload>
+            <BtnDownload style={{ justifySelf: "right" }}>{t("download")}</BtnDownload>
           </div>
         </S.NavBarRoot>
         {/* <NavLinks /> */}
