@@ -3,20 +3,35 @@ import styled from "styled-components";
 const RootDiv = styled.div`
   position: relative;
   height: 100%;
-  min-height: 100vh;
+  min-height: 47rem;
+  max-height: 47rem;
   width: 100%;
+  margin-top: 2rem;
+
+
+  
+  @media (max-width: 768px) {
+    border-radius: 0%;
+  }
+
 `;
 
 const ImageDiv = styled.div`
-  height: 100vh;
+  min-height: 47rem;
+  max-height: 47rem;
   border-radius: 2.5rem;
-  margin: 1rem 0px;
+  margin-top: 2rem;
+
   padding: 3rem;
   width: 100%;
   background-image: url("/images/bg_img.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: 768px) {
+    border-radius: 0%;
+  }
 
   &::before {
     content: "";
@@ -28,6 +43,10 @@ const ImageDiv = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0.7;
     border-radius: 2.5rem;
+
+    @media (max-width: 768px) {
+    border-radius: 0%;
+  }
   }
 `;
 
@@ -47,11 +66,23 @@ const TextArea = styled.div`
 
   h1 {
     max-width: 38.438rem;
-    font: normal normal 600 4.313rem/3.375rem "Segoe UI SemiBold" ;
+    font: normal normal 600 4.313rem/3.375rem "Segoe UI SemiBold";
+    @media (max-width: 768px) {
+      font: normal normal 600 3rem/3.375rem "Segoe UI SemiBold";
   }
-  p{
+}
+.sslegis h1 {
+  font: normal normal bold 57px/54px "Segoe UI Bold";
+  color:"#0093FB";
+
+}
+  p {
     max-width: 23.625rem;
     font: normal normal normal 1.563rem/2.125rem "Segoe UI Regular";
+    @media (max-width: 768px) {
+      font: normal normal normal 1.5rem/2.125rem "Segoe UI Regular";
+  }
+
   }
 
   & > div {
@@ -59,6 +90,7 @@ const TextArea = styled.div`
     display: flex;
     flex-direction: column;
   }
+
 `;
 
 export { RootDiv, ImageDiv, TextArea };

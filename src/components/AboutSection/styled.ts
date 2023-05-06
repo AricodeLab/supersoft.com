@@ -10,14 +10,21 @@ const AboutSectionRoot = styled.div`
 
   img {
     object-fit: cover;
-    width: 37.375rem;
-    height: 24.125rem;
+    max-width: 37.375rem;
+    max-height: 24.125rem;
   }
   p{
     color:#587084;
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    
+    img {
+      object-fit: contain;
+    
+    }
   }
 `;
 
@@ -50,14 +57,12 @@ const GridItem = styled.div`
 
   h1 {
     font: normal normal 600 29px/51px "Assistant Regular";
-      color: ${(props) => props.theme.colors.slate[600]};
-  letter-spacing: 0px;
-
+    color: ${(props) => props.theme.colors.slate[600]};
+    letter-spacing: 0px;
   }
   p {
     font: normal normal normal 18px/29px "Assistant Regular";
-  letter-spacing: 0px;
-
+    letter-spacing: 0px;
   }
 `;
 
@@ -76,7 +81,7 @@ const TextArea = styled.div`
     width: 60px;
     height: 4px;
     border: none;
-    background: #1F8CEB 0% 0% no-repeat padding-box;
+    background: #1f8ceb 0% 0% no-repeat padding-box;
   }
   font: normal normal normal 21px/31px "Assistant Regular";
   letter-spacing: 0px;

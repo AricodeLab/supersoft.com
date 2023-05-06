@@ -1,30 +1,33 @@
 import styled from "styled-components";
-const NavBarRoot = styled.nav`
+import { motion } from "framer-motion";
 
-width: 100%;
-margin: 0;
+const NavBarRoot = styled.nav`
+  width: 100%;
+  margin: 0;
   display: flex;
   align-items: center;
   height: 5.625rem;
+  justify-content: space-between;
   max-width: 100%;
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
   }
 `;
 
 const NavMenu = styled.ul`
-position: relative;
+  position: relative;
   display: flex;
   list-style: none;
   margin: 0 auto;
   min-width: fit-content;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 20px;
+    display: none;
   }
 `;
 
@@ -81,4 +84,25 @@ const SuperSoftIcon = styled.img`
 `;
 
 
-export { NavBarRoot, NavMenu, NavMenuItem, SuperSoftIcon };
+const MenuButton = styled(motion.div)`
+  display: none;
+  max-width: 2rem;
+  @media (max-width: 768px) {
+    display: block;
+    margin-left: auto;
+    color: #000;
+    cursor: pointer;
+  }
+  svg {
+   color: #000;
+   font-size: 2rem;
+   transition: all 0.2s ease-in-out;
+ }
+`;
+
+
+
+
+
+
+export { NavBarRoot, NavMenu, NavMenuItem, SuperSoftIcon,MenuButton };
