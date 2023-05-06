@@ -23,6 +23,9 @@ const AboutSectionRoot = styled.div`
 
     img {
       object-fit: contain;
+      margin: 0 auto;
+      max-width: 15rem;
+     max-height: 24.125rem;
     }
   }
 `;
