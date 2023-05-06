@@ -30,7 +30,7 @@ const ImageDiv = styled.div`
   background-position: center;
 
   @media (max-width: 768px) {
-    border-radius: 0%;
+    border-radius: 5%;
   }
 
   &::before {
@@ -45,7 +45,7 @@ const ImageDiv = styled.div`
     border-radius: 2.5rem;
 
     @media (max-width: 768px) {
-    border-radius: 0%;
+    border-radius: 5%;
   }
   }
 `;

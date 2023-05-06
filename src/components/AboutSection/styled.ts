@@ -13,17 +13,16 @@ const AboutSectionRoot = styled.div`
     max-width: 37.375rem;
     max-height: 24.125rem;
   }
-  p{
-    color:#587084;
+  p {
+    color: #587084;
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    
+
     img {
       object-fit: contain;
-    
     }
   }
 `;
@@ -31,13 +30,15 @@ const AboutSectionRoot = styled.div`
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-p{
-  color: #636363;
-}
+  p {
+    color: #636363;
+  }
   @media (max-width: 768px) {
     margin-top: 7.875rem;
 
     grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+    width: 100%;
   }
 `;
 
@@ -64,6 +65,10 @@ const GridItem = styled.div`
     font: normal normal normal 18px/29px "Assistant Regular";
     letter-spacing: 0px;
   }
+
+  @media (max-width: 768px) {
+     max-width: 100%;
+    }
 `;
 
 const TextArea = styled.div`
