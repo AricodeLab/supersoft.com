@@ -32,8 +32,9 @@ function NavBar() {
         WebkitBackdropFilter: "blur(7px)",
         position: "fixed",
         top: "0",
-        zIndex: "1000000",
+        zIndex: "1",
         background: "#ffffffd1",
+        height: "auto", 
       }}
     >
       <Container>
@@ -51,7 +52,7 @@ function NavBar() {
             </div>
             <BoxButton>
               <BtnDownload>
-                {t("download")} <FontAwesomeIcon icon={faDownload} width={12} />
+                {t("download")} <img src="/images/download.png" width={12} />
               </BtnDownload>
             </BoxButton>
           </S.NavMenu>

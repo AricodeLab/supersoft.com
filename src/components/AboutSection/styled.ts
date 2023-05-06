@@ -16,7 +16,7 @@ const AboutSectionRoot = styled.div`
   p {
     color: #587084;
   }
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
     justify-content: center;
@@ -33,15 +33,15 @@ const AboutSectionRoot = styled.div`
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width:100% ;
   p {
     color: #636363;
   }
   @media (max-width: 768px) {
     margin-top: 7.875rem;
-
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
-    width: 100%;
+    min-width: 100%;
   }
 `;
 

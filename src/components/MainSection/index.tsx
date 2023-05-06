@@ -23,7 +23,7 @@ function BoxMain() {
               <p>
                 {t("main_section.private_messages_and_calls")}
               </p>
-              <BtnDownload bg="#0050FF">{t("download")} <FontAwesomeIcon icon={faDownload} width={12} /></BtnDownload>
+              <BtnDownload bg="#0050FF">{t("download")} <img src="/images/download.png" width={12} /></BtnDownload>
             </TextArea>
           </ImageDiv>
         </RootDiv>

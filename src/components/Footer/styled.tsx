@@ -2,7 +2,7 @@ import styled from "styled-components";
 import theme from "@styles/theme";
 const FooterRoot = styled.nav`
   display: flex;
-  min-width: 100%;
+  min-width: > 100;
   
   justify-content: space-between;
   align-items: center;

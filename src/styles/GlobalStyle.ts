@@ -73,6 +73,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: sans-serif;
     font-size: 16px;
+    position: relative;
+    width: 100%;
   }
 
  

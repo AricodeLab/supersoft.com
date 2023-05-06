@@ -43,7 +43,7 @@ function Footer() {
                 bg={theme.colors.green}
                 txtColor={theme.colors.black}
               >
-                {t("download")} <FontAwesomeIcon icon={faDownload} width={12} />
+                {t("download")} <img src="/images/download.png" width={1} />
               </BtnDownload>
             </S.FooterLogoDiv>
 
