@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const AboutSectionRoot = styled.div`
-
-margin: 0;
+  margin: 0;
   margin-top: 7.875rem;
   margin-bottom: 7.875rem;
   display: flex;
@@ -27,25 +26,26 @@ margin: 0;
       object-fit: contain;
       margin: 0 auto;
       max-width: 15rem;
-     max-height: 24.125rem;
+      max-height: 24.125rem;
     }
   }
 `;
 
 const GridContainer = styled.div`
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width:100% ;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-gap: 20px;
+  width: 100%;
   p {
     color: #636363;
   }
   @media (max-width: 768px) {
     margin-top: 7.875rem;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    max-width: fit-content;
 
-    grid-template-columns: 1fr 2fr;
-    column-gap: 3rem;
-    width: 100%;
   }
 `;
 
@@ -74,8 +74,8 @@ const GridItem = styled.div`
   }
 
   @media (max-width: 768px) {
-     max-width: 100%;
-    }
+    max-width: 100%;
+  }
 `;
 
 const TextArea = styled.div`

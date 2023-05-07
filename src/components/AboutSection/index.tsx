@@ -3,7 +3,6 @@ import React from "react";
 import * as S from "./styled";
 import { useTranslation } from "react-i18next";
 import EN from '../../../public/locale/en.json'
-import ReactDOMServer from "react-dom/server";
 
 function AboutSection() {
   const { t } = useTranslation();
