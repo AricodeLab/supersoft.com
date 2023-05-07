@@ -18,13 +18,16 @@ margin: 0;
   p {
     color: #587084;
   }
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
     justify-content: center;
 
     img {
       object-fit: contain;
+      margin: 0 auto;
+      max-width: 15rem;
+     max-height: 24.125rem;
     }
   }
 `;
@@ -33,16 +36,16 @@ const GridContainer = styled.div`
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width:100% ;
   p {
     color: #636363;
   }
   @media (max-width: 768px) {
     margin-top: 7.875rem;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     column-gap: 3rem;
     width: 100%;
-   
   }
 `;
 

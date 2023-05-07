@@ -15,17 +15,22 @@ function BoxMain() {
     } >
       <Container>
         <RootDiv>
-          <ImageDiv >
+          <ImageDiv>
             <TextArea>
-              <h1>
-                {t('main_section.full_solution_systems')}
+              <h1>{t("main_section.full_solution_systems")}</h1>
 
-              </h1>
+              <p>{t("main_section.private_messages_and_calls")}</p>
+              <BtnDownload bg="#0050FF">
+                {t("download")}
+                <span>
 
-              <p>
-                {t("main_section.private_messages_and_calls")}
-              </p>
-              <BtnDownload bg="#0050FF">{t("download")} <FontAwesomeIcon icon={faDownload} width={12} /></BtnDownload>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/724/724933.png"
+                  width={12}
+                  height={12}
+                  />
+                  </span>
+              </BtnDownload>
             </TextArea>
           </ImageDiv>
         </RootDiv>

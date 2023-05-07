@@ -3,6 +3,7 @@ import theme from "@styles/theme";
 const FooterRoot = styled.nav`
   display: flex;
   
+  
   justify-content: space-between;
   align-items: center;
 
@@ -66,8 +67,7 @@ const FooterLogoDiv = styled.div`
     height: auto;
     max-width: 100%;
     filter: brightness(0%);
-    filter: invert(100%);
-    margin-bottom: 10px;
+    
   }
   @media screen and (max-width: 768px) {
   display: flex;
