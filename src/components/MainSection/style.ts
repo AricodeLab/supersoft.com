@@ -6,6 +6,7 @@ const RootDiv = styled.div`
   min-height: 47rem;
   max-height: 47rem;
   width: 100%;
+  min-width: 100%;
   margin-top: 2rem;
 
 

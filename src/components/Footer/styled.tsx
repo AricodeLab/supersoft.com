@@ -141,6 +141,7 @@ const FooterLangSection = styled.select`
   color: #fff;
   border-color: #fff;
   font-weight: bold;
+  height: 30px;
   cursor: pointer;
   text-align: center;
   option{

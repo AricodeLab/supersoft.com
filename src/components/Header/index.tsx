@@ -31,7 +31,9 @@ function NavBar() {
         backdropFilter: "blur(7px)",
         WebkitBackdropFilter: "blur(7px)",
         position: "fixed",
+        left: "0",
         top: "0",
+        width:'100%',
         zIndex: "1000000",
         background: "#ffffffd1",
       }}
@@ -60,30 +62,30 @@ function NavBar() {
             whileTap={{ scale: 0.9, rotate: 180 }}
             onClick={handleToggle}
           >
-            
-            <FontAwesomeIcon icon={icon} width={32}/>
+
+            <FontAwesomeIcon icon={icon} width={32} />
           </S.MenuButton>
         </S.NavBarRoot>
-        {isOpen && (<motion.div  style={{
-                display: "flex",
-                justifyContent: "center",
-                textAlign: "center",
-                alignItems: "center",
-                gap: "2rem",
-                width: "100%",
-                flexDirection: "column",
-                padding: 10
-              }}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              >
+        {isOpen && (<motion.div style={{
+          display: "flex",
+          justifyContent: "center",
+          textAlign: "center",
+          alignItems: "center",
+          gap: "2rem",
+          width: "100%",
+          flexDirection: "column",
+          padding: 10
+        }}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <NavLinks />
           <BoxButton>
-              <BtnDownload>
-                {t("download")} <FontAwesomeIcon icon={faDownload} width={12} />
-              </BtnDownload>
-            </BoxButton>
+            <BtnDownload>
+              {t("download")} <FontAwesomeIcon icon={faDownload} width={12} />
+            </BtnDownload>
+          </BoxButton>
         </motion.div >)}
       </Container>
     </RootContainer>

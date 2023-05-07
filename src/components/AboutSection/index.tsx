@@ -16,7 +16,10 @@ function AboutSection() {
   ];
   const boldWord = t("about_section.nooven_systems_programs")
   return (
-    <RootContainer >
+    <RootContainer style={
+      {
+      }
+    } >
       <Container>
         <S.AboutSectionRoot>
           <S.TextArea style={{ textAlign: "left" }}>

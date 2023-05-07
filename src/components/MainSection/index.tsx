@@ -9,7 +9,9 @@ function BoxMain() {
   const { t } = useTranslation();
   return (
     <RootContainer  style={
-      {marginTop: '100px' }
+      {marginTop: '100px',
+   
+    }
     } >
       <Container>
         <RootDiv>

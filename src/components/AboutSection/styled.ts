@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const AboutSectionRoot = styled.div`
+
+margin: 0;
   margin-top: 7.875rem;
   margin-bottom: 7.875rem;
   display: flex;
@@ -28,6 +30,7 @@ const AboutSectionRoot = styled.div`
 `;
 
 const GridContainer = styled.div`
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   p {
@@ -36,9 +39,10 @@ const GridContainer = styled.div`
   @media (max-width: 768px) {
     margin-top: 7.875rem;
 
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
     width: 100%;
+   
   }
 `;
 

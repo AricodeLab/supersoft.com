@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   min-width: 100%;
-  max-width: 1200px;
+ 
   margin: 0 auto;
   padding: 0 20px;
 `;
@@ -12,8 +12,8 @@ type RootContainer = {
   border?: string;
 };
 const RootContainer = styled.div<RootContainer>`
-  width: 100%;
-  min-width: 100%;
+position: relative;
+min-width: 100%;
   margin: 0 auto;
   background: ${(props) => props.bgColor};
   border: ${(props) => props.bgColor};
@@ -30,8 +30,8 @@ const BtnDownload = styled.a<ButtonDownload>`
   box-sizing:border-box ;
   border-radius: 20px;
   font-size: 12px;
-  max-width: 110px;
-  width: 100px;
+  width: 110px;
+  min-width: 100px;
   height: 35px;
   display: flex;
   justify-content: space-around;
