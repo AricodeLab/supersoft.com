@@ -30,7 +30,7 @@ const BtnDownload = styled.a<ButtonDownload>`
   box-sizing:border-box ;
   border-radius: 20px;
   font-size: 12px;
-  width: 110px;
+  width: 100px;
   min-width: 100px;
   height: 35px;
   display: flex;

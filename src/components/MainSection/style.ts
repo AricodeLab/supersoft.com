@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 const RootDiv = styled.div`
   position: relative;
-  height: 100%;
-  min-height: 47rem;
-  max-height: 47rem;
+  
+ 
   width: 100%;
   min-width: 100%;
   margin-top: 2rem;
@@ -18,8 +17,8 @@ const RootDiv = styled.div`
 `;
 
 const ImageDiv = styled.div`
-  min-height: 47rem;
-  max-height: 47rem;
+  min-height: 50rem;
+  max-height: 50rem;
   border-radius: 2.5rem;
   margin-top: 2rem;
 
@@ -31,6 +30,7 @@ const ImageDiv = styled.div`
   background-position: center;
 
   @media (max-width: 768px) {
+    font-size: 12px;
     border-radius: 5%;
   }
 
@@ -64,12 +64,14 @@ const TextArea = styled.div`
   justify-content: center;
   gap: 2rem;
   text-align: left;
-
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   h1 {
     max-width: 38.438rem;
     font: normal normal 600 4.313rem/3.375rem "Segoe UI SemiBold";
     @media (max-width: 768px) {
-      font: normal normal 600 3rem/3.375rem "Segoe UI SemiBold";
+      font: normal normal 600 24px "Segoe UI SemiBold";
   }
 }
 .sslegis h1 {
@@ -81,7 +83,7 @@ const TextArea = styled.div`
     max-width: 23.625rem;
     font: normal normal normal 1.563rem/2.125rem "Segoe UI Regular";
     @media (max-width: 768px) {
-      font: normal normal normal 1.5rem/2.125rem "Segoe UI Regular";
+      font: normal normal normal 12px "Segoe UI Regular";
   }
 
   }
