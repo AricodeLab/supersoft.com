@@ -77,7 +77,7 @@ const TextArea = styled.div`
     font: normal normal 600 4.313rem/3.375rem "Segoe UI SemiBold";
     @media (max-width: 768px) {
       
-      font: normal normal 600 18px "Segoe UI SemiBold";
+      font: normal normal 600 32px "Segoe UI SemiBold";
   }
 }
 .sslegis h1 {
