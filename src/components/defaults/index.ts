@@ -36,6 +36,7 @@ const BtnDownload = styled.a<ButtonDownload>`
   display: flex;
   justify-content: space-around;
   text-align: center;
+  align-items: center;
   font-weight: bold;
   transition: 0.2s linear;
   color: ${(props) => props.txtColor || "#ffff"};
@@ -45,6 +46,10 @@ const BtnDownload = styled.a<ButtonDownload>`
     width: 110px;
     text-align: left;
     cursor: pointer;
+  }
+
+  span {
+    filter: invert(100%);
   }
 
 `

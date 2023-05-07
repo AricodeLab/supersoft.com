@@ -36,14 +36,14 @@ function Footer() {
         <Container style={{marginBottom: "9.313rem", justifySelf: "flex-end"}}>
           <S.FooterRoot>
             <S.FooterLogoDiv>
-              <Image src={logo} alt="" width={200} />
+              <Image src={logo} alt="" width={200} style={{marginBottom: 15}}/>
               <BtnDownload
                 href="#"
                 download
                 bg={theme.colors.green}
                 txtColor={theme.colors.black}
               >
-                {t("download")} <img src="/images/download.png" width={1} />
+                {t("download")} <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" width={10} height={10}  />
               </BtnDownload>
             </S.FooterLogoDiv>
 
