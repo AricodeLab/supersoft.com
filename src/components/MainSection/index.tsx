@@ -2,8 +2,7 @@ import { BtnDownload, Container, RootContainer } from "@components/defaults";
 import React from "react";
 import { RootDiv, ImageDiv, TextArea } from "./style";
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 
 function BoxMain() {
   const { t } = useTranslation();

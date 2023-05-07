@@ -23,7 +23,7 @@ const FooterMenu = styled.div`
   list-style: none;
   gap: 4.688rem;
   min-width: 50%;
-  
+
   ul {
     display: flex;
     flex-direction: column;
@@ -54,11 +54,13 @@ const FooterMenu = styled.div`
   }
 
   @media (max-width: 768px) {
+  display: flex;
     flex-direction: column;
     align-items: flex-start;
     min-width: 100%;
     text-align: center;
     margin-top: 20px;
+    margin: 0;
   }
 `;
 
@@ -71,8 +73,9 @@ const FooterLogoDiv = styled.div`
   }
   @media screen and (max-width: 768px) {
   display: flex;
+  flex-wrap:wrap;
   justify-content: center;
-  gap: 3rem;
+  gap:0
 }
 `;
 
@@ -102,7 +105,7 @@ const FooterCredits = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
+ 
   a {
     color: #fff;
     max-width: 4.125;
@@ -119,9 +122,26 @@ const FooterCredits = styled.div`
     grid-column-end: 5;
     grid-row: 1;
   }
+
+  @media screen and (max-width: 768px)  {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  width: 80%;
+  }
+
 `;
 const FooterButtons = styled.div`
   width: 100%;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin:10px;
+  }
   button {
     width: 40px;
     height: 40px;
@@ -136,14 +156,20 @@ const FooterButtons = styled.div`
   }
 `;
 const FooterLangSection = styled.select`
+
   border-radius: 50px;
   background-color: ${theme.colors.blue[900]};
   color: #fff;
   border-color: #fff;
   font-weight: bold;
   height: 30px;
+
   cursor: pointer;
   text-align: center;
+  @media screen and (max-width: 768px)  {
+
+    font-size: 12px;
+}
   option{
     border-radius: 50px;
     transition: 1s linear;

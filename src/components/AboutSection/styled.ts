@@ -41,7 +41,7 @@ const GridContainer = styled.div`
   }
   @media (max-width: 768px) {
     margin-top: 7.875rem;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-columns: 1fr;
     column-gap: 1rem;
     max-width: fit-content;

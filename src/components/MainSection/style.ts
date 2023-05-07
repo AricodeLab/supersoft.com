@@ -64,14 +64,20 @@ const TextArea = styled.div`
   justify-content: center;
   gap: 2rem;
   text-align: left;
+  box-sizing: border-box;
   @media (max-width: 768px) {
     width: 100%;
+    gap:0;
+    left:0;
+  
+    padding: 5px;
   }
   h1 {
-    max-width: 38.438rem;
+    
     font: normal normal 600 4.313rem/3.375rem "Segoe UI SemiBold";
     @media (max-width: 768px) {
-      font: normal normal 600 24px "Segoe UI SemiBold";
+      
+      font: normal normal 600 18px "Segoe UI SemiBold";
   }
 }
 .sslegis h1 {
@@ -83,7 +89,7 @@ const TextArea = styled.div`
     max-width: 23.625rem;
     font: normal normal normal 1.563rem/2.125rem "Segoe UI Regular";
     @media (max-width: 768px) {
-      font: normal normal normal 12px "Segoe UI Regular";
+      font: normal normal normal 16px "Segoe UI Regular";
   }
 
   }
